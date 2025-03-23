@@ -9,38 +9,63 @@
             font-family: Tahoma, sans-serif;
             direction: rtl;
             text-align: right;
-            margin: 50px;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
         }
         .form-container {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 350px;
+            margin: 100px auto;
+            padding: 25px;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
         }
         .form-container label {
             display: block;
+            font-size: 14px;
             margin-bottom: 5px;
+            color: #34495e;
         }
         .form-container input, .form-container select {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #bdc3c7;
             border-radius: 5px;
+            background-color: #ecf0f1;
+            font-size: 16px;
+            color: #34495e;
+        }
+        .form-container input:focus, .form-container select:focus {
+            outline: none;
+            border-color: #3498db;
+            background-color: #ffffff;
         }
         .form-container button {
             width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+            padding: 14px;
+            background-color: #3498db;
             color: white;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
+            cursor: pointer;
         }
         .form-container button:hover {
-            background-color: #45a049;
+            background-color: #2980b9;
+        }
+        .form-container .note {
+            text-align: center;
+            font-size: 14px;
+            color: #95a5a6;
         }
     </style>
 </head>
@@ -75,11 +100,11 @@
                 <option value="مناطق آزاد">بانک مناطق آزاد</option>
                 <option value="شهری">بانک شهری</option>
                 <option value="سایر">سایر</option>
-                <!-- سایر بانک‌ها را اضافه کرده‌ام -->
             </select>
             
             <button type="submit">دریافت عیدی</button>
         </form>
+        <p class="note">لطفاً اطلاعات خود را با دقت وارد کنید.</p>
     </div>
 
 </body>
